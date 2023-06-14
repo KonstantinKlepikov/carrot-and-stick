@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://j87n4lychbt5"]
+[gd_scene load_steps=7 format=3 uid="uid://j87n4lychbt5"]
 
 [ext_resource type="Script" path="res://main_menu/version_label.gd" id="1_5huni"]
+[ext_resource type="Texture2D" uid="uid://ddw1jlr67uhpn" path="res://assets/logo.png" id="1_vo3mq"]
 [ext_resource type="PackedScene" uid="uid://bdnyglk1i1cxl" path="res://gameplay/gameplay.tscn" id="2_5nvqq"]
 [ext_resource type="Script" path="res://main_menu/menu_options.gd" id="2_gpv3d"]
 [ext_resource type="PackedScene" uid="uid://dpicmplffpula" path="res://settings/settings.tscn" id="3_2osu0"]
@@ -20,20 +21,33 @@ offset_left = -34.0
 offset_top = -28.0
 offset_right = 1318.0
 offset_bottom = 758.0
-color = Color(0.227451, 0.368627, 0.521569, 1)
+color = Color(0.0352941, 0.0196078, 0.129412, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.398
+anchor_right = 0.512
+anchor_bottom = 0.398
+offset_left = -269.36
+offset_top = -202.56
+offset_right = 242.64
+offset_bottom = 309.44
+texture = ExtResource("1_vo3mq")
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -65.5
-offset_top = 93.0
-offset_right = 65.5
-offset_bottom = 135.0
+offset_left = -109.0
+offset_top = 2.0
+offset_right = 106.0
+offset_bottom = 44.0
 grow_horizontal = 2
 theme_type_variation = &"HeaderLarge"
-text = "YOUR GAME"
+text = "Carrot and Stick"
 horizontal_alignment = 1
 
 [node name="Credit" type="Label" parent="."]
@@ -41,12 +55,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -59.5
-offset_top = 156.0
-offset_right = 59.5
-offset_bottom = 182.0
+offset_left = -133.0
+offset_top = 41.0
+offset_right = 141.0
+offset_bottom = 67.0
 grow_horizontal = 2
-text = "A game by YOU"
+text = "Fuck capitalism Jam 2023 tiny game"
 
 [node name="Controls" type="Label" parent="."]
 layout_mode = 0
@@ -62,12 +76,12 @@ horizontal_alignment = 2
 
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 570.0
-offset_right = 365.0
-offset_bottom = 674.0
+offset_left = 16.0
+offset_top = 653.0
+offset_right = 327.0
+offset_bottom = 757.0
 text = "INSTRUCTIONS
-Collect all the things!"
+Crush the system!"
 
 [node name="Version" type="Label" parent="."]
 layout_mode = 0
@@ -90,14 +104,14 @@ text = "Debug UI enabled"
 
 [node name="MenuOptions" type="VFlowContainer" parent="." node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 1
-anchors_preset = 13
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -35.0
-offset_top = 192.0
-offset_right = 36.0
-offset_bottom = -9.0
+anchor_bottom = 1.038
+offset_left = -38.0
+offset_top = 583.0
+offset_right = 32.0
+offset_bottom = -17.3601
 grow_horizontal = 2
 grow_vertical = 2
 shortcut_context = NodePath("Start")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv64rap3vep31"]
+
+[ext_resource type="Texture2D" uid="uid://bbge0igggjosx" path="res://assets/treasure-1.png" id="1_1uc66"]
+[ext_resource type="Script" path="res://gameplay/treasure.gd" id="1_rcqwn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aelha"]
+radius = 18.6043
+
+[node name="Treasure" type="Area2D"]
+position = Vector2(650, 350)
+scale = Vector2(5, 5)
+disable_mode = 1
+script = ExtResource("1_rcqwn")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1uc66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_aelha")
