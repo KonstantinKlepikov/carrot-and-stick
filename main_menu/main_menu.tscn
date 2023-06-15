@@ -64,10 +64,10 @@ text = "Fuck capitalism Jam 2023 tiny game"
 
 [node name="Controls" type="Label" parent="."]
 layout_mode = 0
-offset_left = 843.0
-offset_top = 573.0
-offset_right = 1251.0
-offset_bottom = 677.0
+offset_left = 854.0
+offset_top = 595.0
+offset_right = 1262.0
+offset_bottom = 699.0
 text = "CONTROLS
 Move: WASD | Accept: J | Cancel: K | Pause: P
 Move: Arrow Keys | Accept: Z | Cancel: Z | Pause: Esc
