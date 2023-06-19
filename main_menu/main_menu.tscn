@@ -21,19 +21,19 @@ offset_left = -34.0
 offset_top = -28.0
 offset_right = 1318.0
 offset_bottom = 758.0
-color = Color(0.0352941, 0.0196078, 0.129412, 1)
+color = Color(1, 0.482353, 0.662745, 1)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Icon" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.512
 anchor_top = 0.398
 anchor_right = 0.512
 anchor_bottom = 0.398
-offset_left = -269.36
-offset_top = -202.56
-offset_right = 242.64
-offset_bottom = 309.44
+offset_left = -655.36
+offset_top = -286.56
+offset_right = 56.64
+offset_bottom = 433.44
 texture = ExtResource("1_vo3mq")
 
 [node name="Title" type="Label" parent="."]
@@ -41,56 +41,36 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -109.0
-offset_top = 2.0
-offset_right = 106.0
-offset_bottom = 44.0
+offset_left = 248.0
+offset_top = 159.0
+offset_right = 463.0
+offset_bottom = 201.0
 grow_horizontal = 2
 theme_type_variation = &"HeaderLarge"
 text = "Carrot and Stick"
 horizontal_alignment = 1
 
-[node name="Credit" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -133.0
-offset_top = 41.0
-offset_right = 141.0
-offset_bottom = 67.0
-grow_horizontal = 2
-text = "Fuck capitalism Jam 2023 tiny game"
-
-[node name="Controls" type="Label" parent="."]
-layout_mode = 0
-offset_left = 854.0
-offset_top = 595.0
-offset_right = 1262.0
-offset_bottom = 699.0
-text = "CONTROLS
-Move: WASD | Accept: J | Cancel: K | Pause: P
-Move: Arrow Keys | Accept: Z | Cancel: Z | Pause: Esc
-Gamepads work too!"
-horizontal_alignment = 2
-
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 653.0
-offset_right = 327.0
-offset_bottom = 757.0
-text = "INSTRUCTIONS
-Crush the system!"
+offset_left = 840.0
+offset_top = 290.0
+offset_right = 1151.0
+offset_bottom = 394.0
+text = "Crush the system!"
+horizontal_alignment = 1
 
 [node name="Version" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1060.0
-offset_top = 20.0
-offset_right = 1258.0
-offset_bottom = 46.0
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -384.0
+offset_top = 8.0
+offset_right = -186.0
+offset_bottom = 34.0
+grow_horizontal = 0
 text = "Version: [set dynamically]"
-horizontal_alignment = 2
+horizontal_alignment = 1
 script = ExtResource("1_5huni")
 
 [node name="DebugUIStatus" type="Label" parent="." groups=["debug_ui"]]
@@ -105,13 +85,10 @@ text = "Debug UI enabled"
 [node name="MenuOptions" type="VFlowContainer" parent="." node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.038
-offset_left = -38.0
-offset_top = 583.0
-offset_right = 32.0
-offset_bottom = -17.3601
+anchor_left = 0.7125
+anchor_top = 0.722222
+anchor_right = 0.867188
+anchor_bottom = 0.765278
 grow_horizontal = 2
 grow_vertical = 2
 shortcut_context = NodePath("Start")
@@ -119,6 +96,7 @@ alignment = 1
 script = ExtResource("2_gpv3d")
 gameplay_scene = ExtResource("2_5nvqq")
 settings_scene = ExtResource("3_2osu0")
+metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="MenuOptions"]
 layout_mode = 2

@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://4sspwal6655o"]
 
-[ext_resource type="Texture2D" uid="uid://do53hjq46yomh" path="res://assets/treasure-1.png" id="1_1uc66"]
 [ext_resource type="Script" path="res://treasure/treasure.gd" id="1_rcqwn"]
-[ext_resource type="Texture2D" uid="uid://ceq4fny6k6oql" path="res://assets/treasure-2.png" id="3_ffxhw"]
+[ext_resource type="TileSet" uid="uid://cgo8ew7m12lou" path="res://assets/new_tile_set.tres" id="4_4vwoo"]
+[ext_resource type="Texture2D" uid="uid://txky1ey4puf2" path="res://assets/treasuries.png" id="5_1g4pm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_aelha"]
-radius = 125.877
+radius = 90.0
 
 [node name="Treasure" type="Area2D"]
 position = Vector2(650, 350)
@@ -13,13 +13,17 @@ disable_mode = 1
 script = ExtResource("1_rcqwn")
 metadata/_edit_group_ = true
 
-[node name="GoldHeapq1" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("1_1uc66")
-
-[node name="GoldHeapq2" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("3_ffxhw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionTreasure" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_aelha")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+tile_set = ExtResource("4_4vwoo")
+format = 2
+
+[node name="Golden" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5_1g4pm")
+region_enabled = true
+region_rect = Rect2(160, 0, 16, 16)
