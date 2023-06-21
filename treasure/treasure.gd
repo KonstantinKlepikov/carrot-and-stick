@@ -28,7 +28,7 @@ func get_rand_pos() -> Vector2:
 
 # get treasue tile FIXME:
 func get_tile_region() -> Rect2:
-	return Rect2(160, 0, 16, 16)
+	return Rect2(732, 71, 14, 10)
 
 
 # spawn treasuries
