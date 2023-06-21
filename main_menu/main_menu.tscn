@@ -21,7 +21,7 @@ offset_left = -34.0
 offset_top = -28.0
 offset_right = 1318.0
 offset_bottom = 758.0
-color = Color(1, 0.482353, 0.662745, 1)
+color = Color(1, 0.184314, 0, 1)
 
 [node name="Icon" type="TextureRect" parent="."]
 layout_mode = 1
@@ -32,7 +32,7 @@ anchor_right = 0.512
 anchor_bottom = 0.398
 offset_left = -655.36
 offset_top = -286.56
-offset_right = 56.64
+offset_right = 64.64
 offset_bottom = 433.44
 texture = ExtResource("1_vo3mq")
 
