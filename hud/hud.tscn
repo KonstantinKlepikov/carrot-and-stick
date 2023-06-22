@@ -24,3 +24,15 @@ grow_horizontal = 0
 theme = ExtResource("2_yarf0")
 text = "treasure"
 horizontal_alignment = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1232.0
+offset_top = 16.0
+offset_right = 1256.0
+offset_bottom = 46.0
+theme = ExtResource("2_yarf0")
+theme_override_colors/font_color = Color(0.176471, 0.631373, 0.768627, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "$"
+horizontal_alignment = 1
