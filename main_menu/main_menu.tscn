@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://j87n4lychbt5"]
+[gd_scene load_steps=8 format=3 uid="uid://j87n4lychbt5"]
 
 [ext_resource type="Script" path="res://main_menu/version_label.gd" id="1_5huni"]
 [ext_resource type="Texture2D" uid="uid://ddw1jlr67uhpn" path="res://assets/logo.png" id="1_vo3mq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://main_menu/menu_options.gd" id="2_gpv3d"]
 [ext_resource type="PackedScene" uid="uid://dpicmplffpula" path="res://settings/settings.tscn" id="3_2osu0"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_82nwe"]
+[ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="7_yj7px"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -21,7 +22,7 @@ offset_left = -34.0
 offset_top = -28.0
 offset_right = 1318.0
 offset_bottom = 758.0
-color = Color(1, 0.184314, 0, 1)
+color = Color(0.709804, 0.305882, 0.207843, 1)
 
 [node name="Icon" type="TextureRect" parent="."]
 layout_mode = 1
@@ -30,10 +31,10 @@ anchor_left = 0.512
 anchor_top = 0.398
 anchor_right = 0.512
 anchor_bottom = 0.398
-offset_left = -655.36
-offset_top = -286.56
-offset_right = 64.64
-offset_bottom = 433.44
+offset_left = -527.36
+offset_top = -172.56
+offset_right = -15.36
+offset_bottom = 339.44
 texture = ExtResource("1_vo3mq")
 
 [node name="Title" type="Label" parent="."]
@@ -41,21 +42,24 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 248.0
-offset_top = 159.0
-offset_right = 463.0
-offset_bottom = 201.0
+offset_left = 158.0
+offset_top = 274.0
+offset_right = 485.0
+offset_bottom = 322.0
 grow_horizontal = 2
+theme = ExtResource("7_yj7px")
 theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 50
 text = "Carrot and Stick"
 horizontal_alignment = 1
 
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 840.0
-offset_top = 290.0
-offset_right = 1151.0
-offset_bottom = 394.0
+offset_left = 805.0
+offset_top = 388.0
+offset_right = 1116.0
+offset_bottom = 492.0
+theme = ExtResource("7_yj7px")
 text = "Crush the system!"
 horizontal_alignment = 1
 
@@ -64,11 +68,12 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -384.0
-offset_top = 8.0
-offset_right = -186.0
-offset_bottom = 34.0
+offset_left = -419.0
+offset_top = 170.0
+offset_right = -221.0
+offset_bottom = 196.0
 grow_horizontal = 0
+theme = ExtResource("7_yj7px")
 text = "Version: [set dynamically]"
 horizontal_alignment = 1
 script = ExtResource("1_5huni")
@@ -85,10 +90,14 @@ text = "Debug UI enabled"
 [node name="MenuOptions" type="VFlowContainer" parent="." node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.7125
-anchor_top = 0.722222
-anchor_right = 0.867188
-anchor_bottom = 0.765278
+anchor_left = 0.70625
+anchor_top = 0.713889
+anchor_right = 0.841406
+anchor_bottom = 0.756945
+offset_left = -32.0
+offset_top = 14.0002
+offset_right = -32.0
+offset_bottom = 17.9999
 grow_horizontal = 2
 grow_vertical = 2
 shortcut_context = NodePath("Start")
@@ -100,14 +109,17 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="MenuOptions"]
 layout_mode = 2
+theme = ExtResource("7_yj7px")
 text = "Start"
 
 [node name="Settings" type="Button" parent="MenuOptions"]
 layout_mode = 2
+theme = ExtResource("7_yj7px")
 text = "Settings"
 
 [node name="Quit" type="Button" parent="MenuOptions"]
 layout_mode = 2
+theme = ExtResource("7_yj7px")
 text = "Quit"
 
 [node name="SelectSfx" parent="MenuOptions" instance=ExtResource("4_82nwe")]

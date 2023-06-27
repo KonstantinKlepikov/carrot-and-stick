@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://g2jinjsxwkeh"]
+
+[ext_resource type="TileSet" uid="uid://dfwt0575geehr" path="res://assets/mapper.tres" id="1_efx1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8403r"]
+size = Vector2(112, 64)
+
+[node name="RailStation" type="Area2D"]
+position = Vector2(616, 64)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 56.0
+color = Color(0.372549, 0.337255, 0.4, 1)
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-8, 8)
+tile_set = ExtResource("1_efx1k")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1048580, 65549, 65536, 1048580, 65550, 131072, 1048580, 65550, 1, 1114116, 65549, 2, 1114116, 65549, 3, 1114116, 65549, 4, 1114116, 65549, 5, 1114116, 65549, 6, 1179652, 65549, 65542, 1179652, 65550, 131078, 1179652, 65550, 131075, 327684, 65546, 131074, 327684, 65546, 131076, 327684, 65546, 196615, 458756, 65548, 196614, 393220, 65548, 196613, 393220, 65548, 196612, 393220, 65548, 196611, 393220, 65548, 196610, 393220, 65548, 196609, 393220, 65548, 196608, 393220, 65548, 262143, 327684, 65548, 262144, 2949124, 0, 262146, 786436, 19, 262147, 851972, 19, 131079, 851972, 20, 196607, 786436, 20, 262150, 2883588, 0, 262148, 2949124, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(48, 40)
+shape = SubResource("RectangleShape2D_8403r")

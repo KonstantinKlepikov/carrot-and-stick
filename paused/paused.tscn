@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cko02oljhiby"]
+[gd_scene load_steps=4 format=3 uid="uid://cko02oljhiby"]
 
 [ext_resource type="Script" path="res://paused/paused.gd" id="1_n0tpy"]
 [ext_resource type="Script" path="res://paused/options.gd" id="2_iq4em"]
+[ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="2_wkhu6"]
 
 [node name="Paused" type="Control"]
 process_mode = 2
@@ -19,7 +20,7 @@ offset_left = -34.0
 offset_top = -24.0
 offset_right = 1317.0
 offset_bottom = 750.0
-color = Color(1, 0.184314, 0, 1)
+color = Color(0.709804, 0.305882, 0.207843, 1)
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
@@ -27,24 +28,28 @@ offset_left = 589.0
 offset_top = 136.0
 offset_right = 687.0
 offset_bottom = 178.0
+theme = ExtResource("2_wkhu6")
 theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 30
 text = "Paused"
+horizontal_alignment = 1
 
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 513.0
-offset_top = 239.0
-offset_right = 770.0
-offset_bottom = 273.0
+offset_left = 512.0
+offset_top = 240.0
+offset_right = 774.0
+offset_bottom = 274.0
+theme = ExtResource("2_wkhu6")
 text = "Press START, P, or ESC to resume."
 horizontal_alignment = 1
 
 [node name="PauseOptions" type="VFlowContainer" parent="." node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 0
-offset_left = 548.0
-offset_top = 170.0
-offset_right = 721.0
-offset_bottom = 714.0
+offset_left = 552.0
+offset_top = 168.0
+offset_right = 725.0
+offset_bottom = 712.0
 shortcut_context = NodePath("Resume")
 alignment = 1
 script = ExtResource("2_iq4em")
@@ -52,14 +57,17 @@ metadata/_edit_group_ = true
 
 [node name="Resume" type="Button" parent="PauseOptions"]
 layout_mode = 2
+theme = ExtResource("2_wkhu6")
 text = "Resume"
 
 [node name="MainMenu" type="Button" parent="PauseOptions"]
 layout_mode = 2
+theme = ExtResource("2_wkhu6")
 text = "Return to Main Menu"
 
 [node name="Quit" type="Button" parent="PauseOptions"]
 layout_mode = 2
+theme = ExtResource("2_wkhu6")
 text = "Quit"
 
 [connection signal="pressed" from="PauseOptions/Resume" to="." method="_resume"]

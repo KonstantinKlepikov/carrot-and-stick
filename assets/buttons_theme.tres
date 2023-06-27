@@ -1,0 +1,17 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://83kvg3nmy6xx"]
+
+[ext_resource type="FontFile" uid="uid://cqhubxsgb77gr" path="res://assets/m6x11.ttf" id="1_0krwp"]
+
+[resource]
+default_font = ExtResource("1_0krwp")
+default_font_size = 20
+Button/colors/font_color = Color(0.968627, 0.878431, 0.698039, 1)
+Button/colors/font_focus_color = Color(0.968627, 0.878431, 0.698039, 1)
+Button/colors/font_hover_color = Color(0.968627, 0.945098, 0.894118, 1)
+Button/colors/font_hover_pressed_color = Color(0.968627, 0.945098, 0.894118, 1)
+Button/colors/font_outline_color = Color(0.968627, 0.945098, 0.894118, 1)
+Button/colors/font_pressed_color = Color(0.968627, 0.945098, 0.894118, 1)
+Button/constants/h_separation = 2
+Label/colors/font_color = Color(0.968627, 0.878431, 0.698039, 1)
+Label/colors/font_shadow_color = Color(0.372549, 0.337255, 0.4, 1)
+Label/font_sizes/font_size = 20

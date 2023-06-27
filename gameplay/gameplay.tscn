@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdnyglk1i1cxl"]
+[gd_scene load_steps=8 format=3 uid="uid://bdnyglk1i1cxl"]
 
 [ext_resource type="Script" path="res://gameplay/gameplay.gd" id="1_thqv1"]
-[ext_resource type="PackedScene" uid="uid://c1so2b5178e0x" path="res://map/mapper.tscn" id="2_8w2gk"]
+[ext_resource type="PackedScene" uid="uid://cpsbbr6f37vr3" path="res://map/map.tscn" id="2_6sjaj"]
+[ext_resource type="PackedScene" uid="uid://g2jinjsxwkeh" path="res://railstation/rail_station.tscn" id="2_mv1vm"]
 [ext_resource type="PackedScene" uid="uid://cko02oljhiby" path="res://paused/paused.tscn" id="3_w8wrl"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_7kf0b"]
 [ext_resource type="PackedScene" uid="uid://dqv08444ojh1y" path="res://hud/hud.tscn" id="5_5equ7"]
@@ -10,10 +11,13 @@
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_thqv1")
 
-[node name="mapper" parent="." instance=ExtResource("2_8w2gk")]
+[node name="Map" parent="." instance=ExtResource("2_6sjaj")]
+
+[node name="RailStation" parent="." instance=ExtResource("2_mv1vm")]
+position = Vector2(592, 88)
 
 [node name="Treasure" parent="." instance=ExtResource("5_qqmyb")]
-position = Vector2(653, 383)
+position = Vector2(584, 360)
 
 [node name="Stack" type="VFlowContainer" parent="."]
 visible = false
