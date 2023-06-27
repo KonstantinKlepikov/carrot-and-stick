@@ -26,12 +26,12 @@ text = "treasure"
 horizontal_alignment = 2
 
 [node name="Label" type="Label" parent="."]
-offset_left = 1232.0
-offset_top = 16.0
-offset_right = 1256.0
-offset_bottom = 46.0
+offset_left = 1233.0
+offset_top = 20.0
+offset_right = 1257.0
+offset_bottom = 50.0
 theme = ExtResource("2_yarf0")
-theme_override_colors/font_color = Color(0.176471, 0.631373, 0.768627, 1)
+theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "$"

@@ -14,10 +14,10 @@ script = ExtResource("1_thqv1")
 [node name="Map" parent="." instance=ExtResource("2_6sjaj")]
 
 [node name="RailStation" parent="." instance=ExtResource("2_mv1vm")]
-position = Vector2(592, 64)
+position = Vector2(592, 88)
 
 [node name="Treasure" parent="." instance=ExtResource("5_qqmyb")]
-position = Vector2(640, 384)
+position = Vector2(584, 360)
 
 [node name="Stack" type="VFlowContainer" parent="."]
 visible = false

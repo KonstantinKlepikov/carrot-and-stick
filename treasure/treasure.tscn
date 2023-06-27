@@ -1,25 +1,74 @@
-[gd_scene load_steps=4 format=3 uid="uid://4sspwal6655o"]
+[gd_scene load_steps=5 format=3 uid="uid://4sspwal6655o"]
 
 [ext_resource type="Script" path="res://treasure/treasure.gd" id="1_rcqwn"]
-[ext_resource type="Texture2D" uid="uid://c8qhg8bpri3qg" path="res://assets/1bitpack_kenney/Tilesheet/colored-transparent.png" id="2_ltevt"]
+[ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="2_u1q1u"]
+[ext_resource type="TileSet" uid="uid://dfwt0575geehr" path="res://assets/mapper.tres" id="3_cfcyp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_aelha"]
-radius = 90.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8sais"]
+size = Vector2(110, 63)
 
 [node name="Treasure" type="Area2D"]
 position = Vector2(650, 350)
 disable_mode = 1
 script = ExtResource("1_rcqwn")
-metadata/_edit_group_ = true
 
-[node name="CollisionTreasure" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_aelha")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 1.0
+offset_right = 111.0
+offset_bottom = 48.0
+color = Color(0.0941176, 0.290196, 0.290196, 1)
 
-[node name="Golden" type="Sprite2D" parent="."]
-visible = false
-modulate = Color(0, 0.862745, 0, 1)
-self_modulate = Color(0, 0.862745, 0, 1)
-texture = ExtResource("2_ltevt")
-region_enabled = true
-region_rect = Rect2(732, 71, 14, 10)
+[node name="TreasureLabel" type="Label" parent="."]
+offset_left = 1.0
+offset_top = -54.0
+offset_right = 111.0
+offset_bottom = -28.0
+theme = ExtResource("2_u1q1u")
+text = "treasure"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 28.0
+offset_top = -29.0
+offset_right = 52.0
+offset_bottom = 1.0
+theme = ExtResource("2_u1q1u")
+theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "$"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 44.0
+offset_top = -29.0
+offset_right = 68.0
+offset_bottom = 1.0
+theme = ExtResource("2_u1q1u")
+theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "$"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 60.0
+offset_top = -29.0
+offset_right = 84.0
+offset_bottom = 1.0
+theme = ExtResource("2_u1q1u")
+theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "$"
+horizontal_alignment = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("3_cfcyp")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 4, 16, 65536, 4, 17, 131072, 4, 17, 1, 65540, 16, 2, 65540, 16, 3, 65540, 16, 4, 65540, 16, 5, 65540, 16, 6, 131076, 16, 65542, 131076, 17, 131078, 131076, 17, 65537, 65540, 17, 131073, 65540, 17, 65538, 65540, 17, 65539, 65540, 17, 65540, 65540, 17, 65541, 65540, 17, 131077, 65540, 17, 131074, 393220, 17, 131075, 393220, 17, 131076, 393220, 17, 196608, 393220, 12, 196609, 393220, 12, 196610, 393220, 12, 196611, 393220, 12, 196612, 393220, 12, 196613, 393220, 12, 196614, 393220, 12, 196615, 131076, 6, 262143, 131076, 65542, 262144, 2949124, 1, 262148, 2949124, 0, 262150, 2818052, 1, 262145, 2883588, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(56, 31.5)
+shape = SubResource("RectangleShape2D_8sais")
