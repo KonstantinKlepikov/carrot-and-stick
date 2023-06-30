@@ -1,8 +1,6 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://dfwt0575geehr"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dfwt0575geehr"]
 
-[ext_resource type="PackedScene" uid="uid://4sspwal6655o" path="res://treasure/treasure.tscn" id="1_kk3p6"]
 [ext_resource type="Texture2D" uid="uid://uadbelligtnd" path="res://assets/1bitpack_kenney/Tilemap/tileset_legacy.png" id="2_5arq2"]
-[ext_resource type="PackedScene" uid="uid://g2jinjsxwkeh" path="res://railstation/rail_station.tscn" id="2_31e8p"]
 [ext_resource type="Texture2D" uid="uid://d22kor0xfms6e" path="res://assets/1bitpack_kenney/Tilesheet/monochrome-transparent.png" id="2_wkefs"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ueep5"]
@@ -10,10 +8,6 @@ tile_data = PackedInt32Array(196608, 131076, 65542, 1, 4, 16, 65537, 4, 17, 1310
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_s40il"]
 tile_data = PackedInt32Array(131072, 786436, 20, 196608, 327684, 65548, 1, 1048580, 65549, 65537, 1048580, 65550, 131073, 1048580, 65550, 196609, 393220, 65548, 262145, 2949124, 0, 2, 1114116, 65549, 196610, 393220, 65548, 3, 1114116, 65549, 131075, 327684, 65546, 196611, 393220, 65548, 262147, 786436, 19, 4, 1114116, 65549, 131076, 327684, 65546, 196612, 393220, 65548, 262148, 851972, 19, 5, 1114116, 65549, 131077, 327684, 65546, 196613, 393220, 65548, 262149, 2949124, 1, 6, 1114116, 65549, 196614, 393220, 65548, 7, 1179652, 65549, 65543, 1179652, 65550, 131079, 1179652, 65550, 196615, 393220, 65548, 262151, 2883588, 0, 131080, 851972, 20, 196616, 458756, 65548)
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_rf26u"]
-resource_name = "Treasure"
-scenes/1/scene = ExtResource("1_kk3p6")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a6sje"]
 texture = ExtResource("2_5arq2")
@@ -1045,10 +1039,6 @@ separation = Vector2i(1, 1)
 11:26/0 = 0
 11:26/1 = 1
 11:26/1/modulate = Color(0.52549, 0.741176, 0.156863, 1)
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_r0deg"]
-resource_name = "Railstation"
-scenes/2/scene = ExtResource("2_31e8p")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q0o3t"]
 texture = ExtResource("2_wkefs")
@@ -2260,7 +2250,5 @@ separation = Vector2i(1, 1)
 [resource]
 sources/1 = SubResource("TileSetAtlasSource_a6sje")
 sources/4 = SubResource("TileSetAtlasSource_q0o3t")
-sources/2 = SubResource("TileSetScenesCollectionSource_r0deg")
-sources/0 = SubResource("TileSetScenesCollectionSource_rf26u")
 pattern_0 = SubResource("TileMapPattern_ueep5")
 pattern_1 = SubResource("TileMapPattern_s40il")
