@@ -2,6 +2,7 @@
 ## set, since it's optional, this label gets hidden.
 extends Label
 
+
 func _ready() -> void:
 	if Global.version != null:
 		text = "v" + Global.version

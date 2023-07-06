@@ -1,23 +1,33 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdnyglk1i1cxl"]
+[gd_scene load_steps=9 format=3 uid="uid://bdnyglk1i1cxl"]
 
 [ext_resource type="Script" path="res://gameplay/gameplay.gd" id="1_thqv1"]
-[ext_resource type="PackedScene" uid="uid://cpsbbr6f37vr3" path="res://map/map.tscn" id="2_6sjaj"]
-[ext_resource type="PackedScene" uid="uid://g2jinjsxwkeh" path="res://railstation/rail_station.tscn" id="2_mv1vm"]
+[ext_resource type="PackedScene" uid="uid://4sspwal6655o" path="res://treasure/treasure.tscn" id="3_eud56"]
 [ext_resource type="PackedScene" uid="uid://cko02oljhiby" path="res://paused/paused.tscn" id="3_w8wrl"]
+[ext_resource type="PackedScene" uid="uid://g2jinjsxwkeh" path="res://railstation/rail_station.tscn" id="4_0fu4w"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_7kf0b"]
 [ext_resource type="PackedScene" uid="uid://dqv08444ojh1y" path="res://hud/hud.tscn" id="5_5equ7"]
-[ext_resource type="PackedScene" uid="uid://4sspwal6655o" path="res://treasure/treasure.tscn" id="5_qqmyb"]
+[ext_resource type="PackedScene" uid="uid://bem86rbupte8t" path="res://home/home.tscn" id="5_hqyep"]
+[ext_resource type="PackedScene" uid="uid://crgopv63fx2pu" path="res://mine/mine.tscn" id="9_508hr"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_thqv1")
 
-[node name="Map" parent="." instance=ExtResource("2_6sjaj")]
+[node name="BG" type="ColorRect" parent="."]
+offset_right = 1281.0
+offset_bottom = 720.0
+color = Color(0.490196, 0.270588, 0.509804, 1)
 
-[node name="RailStation" parent="." instance=ExtResource("2_mv1vm")]
-position = Vector2(592, 88)
+[node name="Treasure" parent="." instance=ExtResource("3_eud56")]
+position = Vector2(1224, 880)
 
-[node name="Treasure" parent="." instance=ExtResource("5_qqmyb")]
-position = Vector2(584, 360)
+[node name="RailStation" parent="." instance=ExtResource("4_0fu4w")]
+position = Vector2(585, 120)
+
+[node name="Home" parent="." instance=ExtResource("5_hqyep")]
+position = Vector2(128, 320)
+
+[node name="Mine" parent="." instance=ExtResource("9_508hr")]
+position = Vector2(1024, 320)
 
 [node name="Stack" type="VFlowContainer" parent="."]
 visible = false
@@ -56,6 +66,8 @@ size_flags_horizontal = 4
 text = "View Template Source"
 uri = "https://github.com/brettchalupa/godot_skeleton"
 
+[node name="HUD" parent="." instance=ExtResource("5_5equ7")]
+
 [node name="Paused" parent="." instance=ExtResource("3_w8wrl")]
 visible = false
 anchors_preset = 0
@@ -65,5 +77,3 @@ grow_horizontal = 1
 grow_vertical = 1
 
 [node name="SelectSfx" parent="." instance=ExtResource("4_7kf0b")]
-
-[node name="HUD" parent="." instance=ExtResource("5_5equ7")]

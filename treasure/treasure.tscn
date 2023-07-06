@@ -2,37 +2,31 @@
 
 [ext_resource type="Script" path="res://treasure/treasure.gd" id="1_rcqwn"]
 [ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="2_u1q1u"]
-[ext_resource type="TileSet" uid="uid://dfwt0575geehr" path="res://assets/mapper.tres" id="3_cfcyp"]
+[ext_resource type="TileSet" uid="uid://dfwt0575geehr" path="res://assets/mapper.tres" id="3_s5f5c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8sais"]
 size = Vector2(110, 63)
 
 [node name="Treasure" type="Area2D"]
-position = Vector2(650, 350)
+position = Vector2(656, 344)
 disable_mode = 1
 script = ExtResource("1_rcqwn")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 1.0
-offset_right = 111.0
-offset_bottom = 48.0
-color = Color(0.0941176, 0.290196, 0.290196, 1)
-
 [node name="TreasureLabel" type="Label" parent="."]
-offset_left = 1.0
-offset_top = -54.0
-offset_right = 111.0
-offset_bottom = -28.0
+offset_left = -642.0
+offset_top = -342.0
+offset_right = -532.0
+offset_bottom = -316.0
 theme = ExtResource("2_u1q1u")
-text = "treasure"
+text = "Treasure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label" type="Label" parent="."]
-offset_left = 28.0
-offset_top = -29.0
-offset_right = 52.0
-offset_bottom = 1.0
+offset_left = -615.0
+offset_top = -317.0
+offset_right = -591.0
+offset_bottom = -287.0
 theme = ExtResource("2_u1q1u")
 theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -41,10 +35,10 @@ text = "$"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 44.0
-offset_top = -29.0
-offset_right = 68.0
-offset_bottom = 1.0
+offset_left = -599.0
+offset_top = -317.0
+offset_right = -575.0
+offset_bottom = -287.0
 theme = ExtResource("2_u1q1u")
 theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -53,10 +47,10 @@ text = "$"
 horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 60.0
-offset_top = -29.0
-offset_right = 84.0
-offset_bottom = 1.0
+offset_left = -583.0
+offset_top = -317.0
+offset_right = -559.0
+offset_bottom = -287.0
 theme = ExtResource("2_u1q1u")
 theme_override_colors/font_color = Color(0.52549, 0.741176, 0.156863, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -64,11 +58,18 @@ theme_override_font_sizes/font_size = 30
 text = "$"
 horizontal_alignment = 1
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -640.0
+offset_top = -288.0
+offset_right = -528.0
+offset_bottom = -224.0
+color = Color(0.0941176, 0.290196, 0.290196, 1)
+
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("3_cfcyp")
+tile_set = ExtResource("3_s5f5c")
 format = 2
-layer_0/tile_data = PackedInt32Array(0, 4, 16, 65536, 4, 17, 131072, 4, 17, 1, 65540, 16, 2, 65540, 16, 3, 65540, 16, 4, 65540, 16, 5, 65540, 16, 6, 131076, 16, 65542, 131076, 17, 131078, 131076, 17, 65537, 65540, 17, 131073, 65540, 17, 65538, 65540, 17, 65539, 65540, 17, 65540, 65540, 17, 65541, 65540, 17, 131077, 65540, 17, 131074, 393220, 17, 131075, 393220, 17, 131076, 393220, 17, 196608, 393220, 12, 196609, 393220, 12, 196610, 393220, 12, 196611, 393220, 12, 196612, 393220, 12, 196613, 393220, 12, 196614, 393220, 12, 196615, 131076, 6, 262143, 131076, 65542, 262144, 2949124, 1, 262148, 2949124, 0, 262150, 2818052, 1, 262145, 2883588, 1)
+layer_0/tile_data = PackedInt32Array(-917545, 131076, 65542, -1114152, 4, 16, -1048616, 4, 17, -983080, 4, 17, -917544, 393220, 12, -852008, 2949124, 1, -1114151, 65540, 16, -1048615, 65540, 17, -983079, 65540, 17, -917543, 393220, 12, -852007, 2883588, 1, -1114150, 65540, 16, -1048614, 65540, 17, -983078, 393220, 17, -917542, 393220, 12, -1114149, 65540, 16, -1048613, 65540, 17, -983077, 393220, 17, -917541, 393220, 12, -1114148, 65540, 16, -1048612, 65540, 17, -983076, 393220, 17, -917540, 393220, 12, -852004, 2949124, 0, -1114147, 65540, 16, -1048611, 65540, 17, -983075, 65540, 17, -917539, 393220, 12, -1114146, 131076, 16, -1048610, 131076, 17, -983074, 131076, 17, -917538, 393220, 12, -852002, 2818052, 1, -917537, 131076, 6)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(56, 31.5)
+position = Vector2(-584, -256)
 shape = SubResource("RectangleShape2D_8sais")
