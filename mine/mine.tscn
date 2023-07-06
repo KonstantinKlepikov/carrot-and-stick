@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://crgopv63fx2pu"]
+
+[ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="1_8ylpa"]
+[ext_resource type="TileSet" uid="uid://dfwt0575geehr" path="res://assets/mapper.tres" id="1_wf2mu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6f82c"]
+size = Vector2(128, 128)
+
+[node name="Mine" type="Area2D"]
+position = Vector2(0, 24)
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 23.0
+offset_top = -24.0
+offset_right = 107.0
+offset_bottom = 2.0
+theme = ExtResource("1_8ylpa")
+text = "Mine"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.117647, 0.101961, 0.309804, 1)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_wf2mu")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1048580, 19, 458752, 1048580, 21, 65536, 1048580, 20, 131072, 1048580, 20, 196608, 1048580, 20, 262144, 1048580, 20, 327680, 1048580, 20, 393216, 1048580, 20, 458753, 1114116, 21, 458754, 1114116, 21, 458755, 1114116, 21, 458756, 1114116, 21, 458757, 1114116, 21, 458758, 1114116, 21, 458759, 1179652, 21, 393223, 1179652, 20, 327687, 1179652, 20, 262151, 1179652, 20, 196615, 1179652, 20, 131079, 1179652, 20, 65543, 1179652, 20, 7, 1179652, 19, 1, 1114116, 19, 2, 1114116, 19, 3, 1114116, 19, 4, 1114116, 19, 5, 1114116, 19, 6, 1114116, 19, 196611, 1048580, 19, 393217, 1114116, 20, 393222, 1114116, 20, 196612, 1179652, 19, 262147, 1048580, 21, 262148, 1179652, 21, 65537, 1114116, 20, 65542, 1114116, 20, 196610, 983044, 13, 262146, 983044, 13, 262143, 655364, 15, 327679, 655364, 15)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, 64)
+shape = SubResource("RectangleShape2D_6f82c")
