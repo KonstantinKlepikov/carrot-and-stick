@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpicmplffpula"]
 
-[ext_resource type="Script" path="res://settings/settings_controls.gd" id="1_n5jcg"]
-[ext_resource type="Script" path="res://settings/fullscreen_toggle.gd" id="2_xaxe3"]
-[ext_resource type="Script" path="res://settings/sfx_toggle.gd" id="3_ojkp7"]
-[ext_resource type="Script" path="res://settings/music_toggle.gd" id="4_0gokw"]
-[ext_resource type="Script" path="res://settings/back_button.gd" id="5_uk7ws"]
+[ext_resource type="Script" uid="uid://c73cpj2qcmoqd" path="res://settings/settings_controls.gd" id="1_n5jcg"]
+[ext_resource type="Script" uid="uid://dtiau73nrrkt1" path="res://settings/fullscreen_toggle.gd" id="2_xaxe3"]
+[ext_resource type="Script" uid="uid://q8tt56tnx3mx" path="res://settings/sfx_toggle.gd" id="3_ojkp7"]
+[ext_resource type="Script" uid="uid://du6xk14mh7g4p" path="res://settings/music_toggle.gd" id="4_0gokw"]
+[ext_resource type="Script" uid="uid://c3miedhtpjnl2" path="res://settings/back_button.gd" id="5_uk7ws"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
