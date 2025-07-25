@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cko02oljhiby"]
 
-[ext_resource type="Script" path="res://paused/paused.gd" id="1_n0tpy"]
-[ext_resource type="Script" path="res://paused/options.gd" id="2_iq4em"]
+[ext_resource type="Script" uid="uid://bomgux87uxbdu" path="res://paused/paused.gd" id="1_n0tpy"]
+[ext_resource type="Script" uid="uid://dihhwb7glbrs7" path="res://paused/options.gd" id="2_iq4em"]
 [ext_resource type="Theme" uid="uid://83kvg3nmy6xx" path="res://assets/buttons_theme.tres" id="2_wkhu6"]
 
 [node name="Paused" type="Control"]
