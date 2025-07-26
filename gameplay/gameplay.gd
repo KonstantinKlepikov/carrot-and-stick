@@ -1,11 +1,4 @@
 extends Node2D
-@export var money: int = 1000
-
-
-func _process(_delta: float) -> void:
-
-	if $HUD.visible == false:
-		$HUD.show()
 
 
 func _input(event: InputEvent) -> void:
