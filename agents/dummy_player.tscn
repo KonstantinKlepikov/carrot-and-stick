@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgjan3rki8y4x"]
+
+[ext_resource type="Script" uid="uid://ddmqexs2g7u30" path="res://agents/dummy_npc.gd" id="1_5ja86"]
+[ext_resource type="Texture2D" uid="uid://bihpupofb4pnb" path="res://assets/simple-npc.png" id="2_dxflr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ldpjm"]
+radius = 2.0
+
+[node name="DummyPlayer" type="CharacterBody2D"]
+z_index = 2
+motion_mode = 1
+script = ExtResource("1_5ja86")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ldpjm")
+
+[node name="Simple-npc" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -12)
+texture = ExtResource("2_dxflr")
