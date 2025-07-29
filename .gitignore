@@ -2,3 +2,7 @@
 .godot/
 exports/
 .vscode/
+
+# screenshots
+screenshots/*.*
+!screenshots/.gitkeep

@@ -27,6 +27,10 @@ window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 
+[editor]
+
+movie_writer/movie_file="/home/kklepikov/_code_/carrot-and-stick/screenshots/run.avi"
+
 [input]
 
 ui_accept={
