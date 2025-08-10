@@ -8,7 +8,6 @@ func _input(event: InputEvent) -> void:
 
 func _pause() -> void:
 	$Paused.pause()
-	$HUD.hide()
 	get_tree().paused = true
 	
 
